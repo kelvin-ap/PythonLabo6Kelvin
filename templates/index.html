@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Server Report</title>
+  </head>
+  <body>
+    <div class="container">
+      {% for server in servers %}
+      <div class="gallery">
+        <tr>{{server.Name}}</tr>
+        <tr>{{server.Address}}</tr>
+        <tr>{{server.Status}}</tr>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
